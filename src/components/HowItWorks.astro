@@ -1,0 +1,104 @@
+---
+
+---
+
+<div class="w-full px-6 py-20 gap-16 flex flex-col">
+  <h2
+    class=" text-center text-4xl font-bold text-grey-900 dark:text-grey-50"
+  >
+    How it works
+  </h2>
+
+  <div
+    class="mx-auto flex max-w-3xl flex-col items-center justify-center gap-8 lg:flex-row lg:items-start lg:gap-0 xl:max-w-5xl"
+  >
+    <div class="flex w-20 shrink-0 flex-col items-center gap-6">
+      <div
+        class="step-icon flex h-20 w-20 items-center justify-center rounded-2xl"
+      >
+        <img
+          src="/images/person-bounding-box-icon.svg"
+          alt="Verify your age"
+          class="h-8 w-8"
+        />
+      </div>
+      <div class="-mx-16 w-64 gap-2 text-center xl:w-80">
+        <h3
+          class="text-lg font-bold text-grey-900 lg:text-2xl dark:text-grey-50"
+        >
+          Verify your age
+        </h3>
+        <p class="text-sm text-grey-600 lg:text-base dark:text-grey-300">
+          Sign up with an AgeVerified compatible age verification service.
+        </p>
+      </div>
+    </div>
+    <div class="mt-10 hidden flex-1 items-center lg:flex">
+      <img src="/images/arrow.svg" alt="" class="w-full" />
+    </div>
+    <div class="flex w-20 shrink-0 flex-col items-center gap-6">
+      <div
+        class="step-icon flex h-20 w-20 items-center justify-center rounded-2xl"
+      >
+        <img
+          src="/images/broadcast-pin-icon.svg"
+          alt="Signal the website"
+          class="h-8 w-8"
+        />
+      </div>
+      <div class="-mx-16 w-64 gap-2 text-center xl:w-80">
+        <h3
+          class="text-lg font-bold text-grey-900 lg:text-2xl dark:text-grey-50"
+        >
+          Signal the website
+        </h3>
+        <p class="text-sm text-grey-600 lg:text-base dark:text-grey-300">
+          Your browser automatically sends the AgeVerified signal to the
+          website.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-10 hidden flex-1 items-center lg:flex">
+      <img src="/images/arrow.svg" alt="" class="w-full" />
+    </div>
+
+    <div class="flex w-20 shrink-0 flex-col items-center gap-6">
+      <div
+        class="step-icon flex h-20 w-20 items-center justify-center rounded-2xl"
+      >
+        <img
+          src="/images/window-sidebar-icon.svg"
+          alt="Website query"
+          class="h-8 w-8"
+        />
+      </div>
+      <div class="-mx-16 w-64 gap-2 text-center xl:w-80">
+        <h3
+          class="text-lg font-bold text-grey-900 lg:text-2xl dark:text-grey-50"
+        >
+          Website query
+        </h3>
+        <p class="text-sm text-grey-600 lg:text-base dark:text-grey-300">
+          The website retrieves age info from your age verification service
+          whenever needed.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .step-icon {
+    background:
+      linear-gradient(white, white) padding-box,
+      linear-gradient(135deg, #668e4f, #a6c492) border-box;
+    border: 1.5px solid transparent;
+  }
+
+  :global(.dark) .step-icon {
+    background:
+      linear-gradient(#1e293b, #020617) padding-box,
+      linear-gradient(135deg, #668e4f, #a6c492) border-box;
+  }
+</style>

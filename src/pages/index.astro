@@ -1,0 +1,140 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { Header, Footer, ButtonLink } from "mee-components";
+import { header, footer, github } from "../config";
+import Logo from "@components/Logo.astro";
+import HowItWorks from "@components/HowItWorks.astro";
+---
+
+<Layout title="Age Verified">
+  <Header header={header}>
+    <a
+      id="mainLogo"
+      slot="logo"
+      href={"/"}
+      aria-label="logo"
+      class="logo flex h-10 w-52 items-center justify-center"
+    >
+      <Logo />
+    </a>
+  </Header>
+
+  <main class="">
+    <article
+      class="relative mt-27 flex h-full min-h-screen w-screen flex-col items-center justify-between gap-20 overflow-hidden lg:gap-40"
+    >
+      <section
+        class="section top-0 z-100 flex h-full w-screen flex-col items-center justify-center"
+      >
+        <div class="relative flex w-full items-center justify-center">
+          <img
+            class="absolute top-0 h-full w-full object-cover"
+            alt="background image"
+            src="/images/background-top.svg"
+          />
+          <div
+            class="flex max-w-7xl flex-col gap-4 p-6 lg:flex-row lg:items-center lg:justify-center lg:gap-16"
+          >
+            <img
+              class="z-10 max-h-150"
+              alt="age-verified-illustration"
+              src="/images/age-verified-illustration.svg"
+            />
+            <div class="z-10 overflow-hidden">
+              <div class="flex flex-col gap-6 lg:gap-16">
+                <div class="flex flex-col gap-4">
+                  <h1
+                    class="text-center text-4xl text-grey-900 lg:text-left lg:text-6xl dark:text-grey-50"
+                  >
+                    “I’m age verified”
+                  </h1>
+                  <p
+                    class="text-center text-xl text-grey-800 lg:text-left lg:text-2xl dark:text-grey-200"
+                  >
+                    Tell websites your age has already been verified by a
+                    trusted service to confirm you meet the site’s age
+                    requirements (like 13+ or 18+) - nothing more, nothing less.
+                  </p>
+                  <div class="pt-12 w-full flex justify-center lg:justify-start">
+                    <ButtonLink
+                      leftIcon={`github text-lg`}
+                      buttonType="tertiary"
+                      size="xxl"
+                      href={github}
+                      className="w-fit"
+                      ariaLabel={"Github"}
+                      target={"_blank"}>Join us on GitHub</ButtonLink
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <HowItWorks />
+        <div class="flex w-full items-center justify-center px-6 pt-0 lg:pt-20">
+          <div
+            class="relative flex max-w-7xl flex-row items-center justify-center gap-16 overflow-hidden rounded-3xl bg-white"
+          >
+            <img
+              class="absolute top-0 h-full w-full object-cover"
+              alt="background image"
+              src="/images/background-bottom.svg"
+            />
+            <div class="z-1 px-4 py-8 lg:px-16 lg:py-20">
+              <div class="flex flex-col gap-6 lg:gap-16">
+                <div class="flex flex-col items-center justify-center gap-4">
+                  <h2
+                    class="text-center text-3xl font-semibold text-grey-900 lg:text-5xl"
+                  >
+                    A safer, more private internet for everyone.
+                  </h2>
+                  <h3
+                    class="text-center text-2xl font-semibold text-grey-900 lg:text-4xl"
+                  >
+                    Protects minors from mature content, preserves anonymity for
+                    adults on age-restricted platforms.
+                  </h3>
+                  <p class="text-center text-xl text-grey-800 lg:text-2xl">
+                    Simple and convenient: The signal is sent automatically when
+                    you visit a website. Privacy preserving: No need to upload
+                    sensitive personal information* to the website.
+                  </p>
+                  <p class="text-center text-xl text-grey-800 lg:text-2xl">
+                    *e.g. images, videos, driver’s license...
+                  </p>
+                  <div class="flex w-full items-center justify-center pt-16">
+                    <ButtonLink
+                      leftIcon={`github text-lg`}
+                      buttonType="tertiary"
+                      size="xxl"
+                      href={github}
+                      className="w-fit"
+                      ariaLabel={"Github"}
+                      target={"_blank"}>Join us on GitHub</ButtonLink
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div><Footer footer={footer} mode="dark" /></div>
+    </article>
+  </main>
+</Layout>
+<style>
+  .bg-1 {
+    content: "";
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    min-height: 150vh;
+    height: 140%;
+    transform: translate3d(0, 0, 0);
+    z-index: 1;
+    width: 400vw;
+  }
+</style>
