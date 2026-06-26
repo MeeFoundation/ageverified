@@ -1,5 +1,5 @@
 export const meeFoundation = "https://mee.foundation/";
-export const github = "https://github.com/MeeFoundation/mee-ageverified";
+export const github = "https://github.com/MeeFoundation/ageverified";
 export const discord = "https://discord.gg/VyPtN22vsP";
 
 export const header = {
