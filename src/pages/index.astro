@@ -13,7 +13,7 @@ import HowItWorks from "@components/HowItWorks.astro";
       slot="logo"
       href={"/"}
       aria-label="logo"
-      class="logo flex h-10 w-52 items-center justify-center"
+      class="logo flex h-6.5 w-36 items-center justify-center lg:h-11 lg:w-52"
     >
       <Logo />
     </a>
@@ -55,7 +55,9 @@ import HowItWorks from "@components/HowItWorks.astro";
                     trusted service to confirm you meet the site’s age
                     requirements (like 13+ or 18+) - nothing more, nothing less.
                   </p>
-                  <div class="pt-12 w-full flex justify-center lg:justify-start">
+                  <div
+                    class="flex w-full justify-center pt-12 lg:justify-start"
+                  >
                     <ButtonLink
                       leftIcon={`github text-lg`}
                       buttonType="tertiary"
